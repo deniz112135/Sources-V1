@@ -4,6 +4,6 @@ declare const getProxy: () => {
         port: string;
         auth: string;
     };
-    agent: any;
+    agent: import("https-proxy-agent/dist/agent").default;
 };
 export default getProxy;

@@ -29,10 +29,10 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.Subscriptions = exports.Blacklist = exports.LogsJoin = exports.LogsCommands = exports.Admins = exports.Bots = exports.IPs = exports.Settings = exports.Auths = exports.sequelizeInstance = void 0;
 const sequelize = __importStar(require("sequelize"));
 exports.sequelizeInstance = new sequelize.Sequelize({
-    host: "82.65.137.156",
-    username: "OA2Tets",
-    password: "OA2Tets",
-    database: "OA2Tets",
+    host: "",
+    username: "",
+    password: "",
+    database: "",
     port: 3306,
     dialect: 'mariadb',
     define: {

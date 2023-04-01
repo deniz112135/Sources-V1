@@ -36,22 +36,16 @@ const fs_1 = __importDefault(require("fs"));
 const socket_io_client_1 = require("socket.io-client");
 const Callback_1 = __importDefault(require("../Functions/Callback"));
 const proxy_1 = __importDefault(require("../../../proxy"));
+const config_1 = __importDefault(require("../../config"));
 class ExtendedClient extends discord_js_1.Client {
     static modulesPath = path_1.default.join(__dirname, '../Modules');
     Commands = new Map();
     database = database;
     Vars = {
-        DataBase: {
-            host: process.env.DB_HOST,
-            port: process.env.DB_PORT,
-            user: process.env.DB_USER,
-            password: process.env.DB_PASS,
-            database: process.env.DB_NAME
-        },
         Discord: {
-            API_BASE: process.env.API_BASE,
+            API_BASE: config_1.default.API_BASE,
             OAUTH2_URI: `https://discord.com/api/oauth2/authorize?client_id=${process.argv[2]}&redirect_uri=https%3A%2F%2Foauth.m1000.fr%2Fcallback&response_type=code&scope=identify%20guilds.join`,
-            REDIRECTION_URI: process.env.REDIRECTION_URI,
+            REDIRECTION_URI: config_1.default.REDIRECTION_URI
         },
         Client: {
             token: process.argv[2],

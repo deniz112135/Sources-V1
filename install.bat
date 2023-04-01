@@ -1,9 +1,9 @@
 @echo off 
-npm install -g typescript ts-node ts-node-dev
+call npm install -g typescript ts-node ts-node-dev
 
 :: Create array with values API, Client, Database, Routine
-set installPackages= API Client Database Routine
-set Compilate = API Client Routine
+set installPackages=API Client Database Routine
+set Compilate=API Client Routine
 
 :: Loop through array
 for %%f in (%installPackages%) do (

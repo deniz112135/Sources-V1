@@ -8,13 +8,6 @@ export default class ExtendedClient extends Client {
     Commands: Map<String, Commands>;
     database: typeof database;
     Vars: {
-        DataBase: {
-            host: string;
-            port: string;
-            user: string;
-            password: string;
-            database: string;
-        };
         Discord: {
             API_BASE: string;
             OAUTH2_URI: string;
