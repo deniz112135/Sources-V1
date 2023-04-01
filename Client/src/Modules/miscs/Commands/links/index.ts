@@ -7,7 +7,7 @@ const cmd = new Commands(options, []);
 cmd.setHandler({}, async (interaction) => {
     await interaction.deferReply({ ephemeral: true });
 
-    const redirect_uri = encodeURIComponent(`${Client.Vars.Discord.REDIRECTION_URI}/callback`),
+    const redirect_uri = encodeURIComponent(Client.Vars.Discord.REDIRECTION_URI),
         state = encodeURIComponent(JSON.stringify({
             guild: interaction.guildId,
             bot: interaction.client.user.id
