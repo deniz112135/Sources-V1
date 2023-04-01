@@ -1,25 +1,5 @@
 import * as sequelize from 'sequelize';
-
-export const sequelizeInstance = new sequelize.Sequelize({
-    host: "",
-    username: "",
-    password: "",
-    database: "",
-    port: 3306,
-    dialect: 'mariadb',
-    define: {
-        timestamps: true
-    },
-    logging: false,
-    timezone: "Europe/Paris",
-    pool: {
-        max: 50,
-        min: 0,
-        acquire: 30000,
-        idle: 300000
-    }
-});
-
+export declare const sequelizeInstance: sequelize.Sequelize;
 export { default as Auths } from './Auths';
 export { default as Settings } from './Settings';
 export { default as IPs } from './IPs';

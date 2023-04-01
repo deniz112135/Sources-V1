@@ -1,0 +1,1 @@
+{"version":3,"file":"Logging.js","sourceRoot":"","sources":["../../../../../../src/Modules/miscs/Events/Logging.ts"],"names":[],"mappings":";;;AAGa,QAAA,OAAO,GAAU;IAC1B,IAAI,EAAE,OAAO;IACb,GAAG,EAAE,CAAC,MAAsB,EAAE,EAAE;QAC5B,MAAM,CAAC,IAAI,CAAC,GAAG,CAAC,KAAK,CAAC,iBAAiB,EAAE,SAAS,CAAC,CAAC,OAAO,CAAC,MAAM,CAAC,IAAI,EAAE,GAAG,CAAC,CAAC;IAClF,CAAC;CACJ,CAAA"}

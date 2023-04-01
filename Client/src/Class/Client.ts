@@ -11,23 +11,17 @@ import Commands from './Commands';
 import { io } from 'socket.io-client';
 import Callback from '../Functions/Callback';
 import getProxy from '../../../proxy';
+import config from '../../config';
 
 export default class ExtendedClient extends Client {
     static modulesPath = path.join(__dirname, '../Modules');
     public Commands: Map<String, Commands> = new Map();
     public database = database;
     public Vars = {
-        DataBase: {
-            host: process.env.DB_HOST,
-            port: process.env.DB_PORT,
-            user: process.env.DB_USER,
-            password: process.env.DB_PASS,
-            database: process.env.DB_NAME
-        },
         Discord: {
-            API_BASE: process.env.API_BASE,
+            API_BASE: config.API_BASE,
             OAUTH2_URI: `https://discord.com/api/oauth2/authorize?client_id=${process.argv[2]}&redirect_uri=https%3A%2F%2Foauth.m1000.fr%2Fcallback&response_type=code&scope=identify%20guilds.join`,
-            REDIRECTION_URI: process.env.REDIRECTION_URI,
+            REDIRECTION_URI: config.REDIRECTION_URI
         },
         Client: {
             token: process.argv[2],
