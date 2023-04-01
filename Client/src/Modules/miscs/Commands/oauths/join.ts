@@ -103,7 +103,6 @@ cmd.setHandler({ "sub": "join" }, async (interaction) => {
             //? if args.locale is empty, get all locales
             locale: args.locale ? args.locale : { [Op.ne]: null }
         },
-        order: Sequelize.literal('RAND()'),
         group: ['user'],
         attributes: ['user', 'access_token', 'expireDate'],
         raw: true
