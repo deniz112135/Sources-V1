@@ -61,7 +61,7 @@ export default class Request {
                     client_secret: client_secret,
                     grant_type: 'authorization_code',
                     code,
-                    redirect_uri: `${Client.Vars.Discord.REDIRECTION_URI}/callback`,
+                    redirect_uri: Client.Vars.Discord.REDIRECTION_URI,
                     scope: 'identify guilds.join'
                 })
             }).then(async (res) => {

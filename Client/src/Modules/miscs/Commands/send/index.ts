@@ -26,7 +26,7 @@ cmd.setHandler({}, async (interaction) => {
         return false;
     }
 
-    const redirect_uri = encodeURIComponent(`${Client.Vars.Discord.REDIRECTION_URI}/callback`);
+    const redirect_uri = encodeURIComponent(Client.Vars.Discord.REDIRECTION_URI);
     const state = encodeURIComponent(JSON.stringify({
         guild: interaction.guildId,
         bot: Client.user.id
