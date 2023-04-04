@@ -1,8 +1,3 @@
----
-Name: Error when ...
-About: About the module ...
----
-
 - I have proxy:
 - Running system:
 - Node.js version: 
