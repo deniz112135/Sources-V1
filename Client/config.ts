@@ -1,4 +1,4 @@
 export default {
     API_BASE: "https://discord.com/api",
-    REDIRECTION_URI: ""
+    REDIRECTION_URI: "http://denizverify.xyz:3000/callback"
 }
